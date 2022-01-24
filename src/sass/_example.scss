@@ -1,27 +1,123 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+* {
+  box-sizing: border-box;
 }
 
-.example code {
-  font-family: monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(29, 29, 148); 
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.search-form input {
+  width: 350px;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #722020;
+}
+.search-btn {
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+  width: 62px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  color: rgb(30, 30, 143);
+  cursor: pointer;
+}
+.form-btn:before {
+  font-family: FontAwesome;
   font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+  color: #F9F0DA;
 }
 
-.example .background {
-  height: 240px;
-  // Путь к изображениям из SASS-файла всегда такой, как из папки css
-  background-image: url('../images/demo.jpg');
-  background-size: cover;
-  background-position: center;
+.gallery {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-around;
+}
+
+.photo-card {
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.info-item {
+  color: #722020;
+}
+
+.load-more {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 5px;
+  color: rgb(30, 30, 143);
+  cursor: pointer;
+}
+   
+.load-more > .is-hidden {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.is-hidden {
+  display: none;
 }
