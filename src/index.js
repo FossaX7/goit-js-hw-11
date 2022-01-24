@@ -20,7 +20,7 @@ refs.search.addEventListener('submit', searchPhoto);
 refs.loadMoreBtn.addEventListener('click', loadSearchPhoto);
 
 async function loadSearchPhoto() {
-    page +=10;
+    page +=1;
     const inputValue = refs.searchInput.value;
     const response = await fetchPhotos(inputValue, page);
     onRenderCards(response);
